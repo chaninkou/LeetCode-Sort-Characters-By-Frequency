@@ -19,7 +19,7 @@ public class SortByFrequency {
 						
         List<Character>[] bucket = new List[s.length() + 1];
         
-        for (char key : map.keySet()) {
+        for (char key : map.keySet()) { // For each key
             int frequency = map.get(key);
             
             if (bucket[frequency] == null){
@@ -59,7 +59,7 @@ public class SortByFrequency {
         StringBuilder sb = new StringBuilder();
         
         while (!pq.isEmpty()) {
-            Entry<Character, Integer> e = pq.poll();
+            Map.Entry<Character, Integer> e = pq.poll();
             for (int i = 0; i < (int)e.getValue(); i++)
             {
                 sb.append(e.getKey());
