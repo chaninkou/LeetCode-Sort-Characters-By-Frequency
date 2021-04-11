@@ -44,7 +44,7 @@ public class SortByFrequency {
         return sb.toString();
     }
 	
-	// Using Priority Queue with O(nlogn) time
+	// Using Priority Queue with map in O(nlogn) time
     public String frequencySort2(String s) {
         HashMap<Character, Integer> map = new HashMap<>();
         
